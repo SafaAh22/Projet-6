@@ -14,7 +14,7 @@ from io import StringIO
 st.write('Projet 6')
 
 # Load the model from the directory
-model = load_model("finalmodelh5")
+model = load_model("InceptionV3modelh5")
 
 breed_names = joblib.load('breed_names.joblib')
 
