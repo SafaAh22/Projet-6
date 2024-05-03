@@ -14,11 +14,11 @@ from io import StringIO
 st.write('Projet 6')
 
 # Load the model from the directory
-# model = load_model("InceptionV3modelh5")
-url = 'https://drive.google.com/drive/folders/1phwKsdSZxRoXKcXsBh74ocvqIDh7lLSv?usp=drive_link'  # Replace with your link
-response = requests.get(url)
-open('InceptionV3model.h5', 'wb').write(response.content)
-model = load_model('InceptionV3model.h5')
+model = load_model("InceptionV3modelh5")
+# url = 'https://drive.google.com/drive/folders/1phwKsdSZxRoXKcXsBh74ocvqIDh7lLSv?usp=drive_link'  # Replace with your link
+# response = requests.get(url)
+# open('InceptionV3model.h5', 'wb').write(response.content)
+# model = load_model('InceptionV3model.h5')
 
 breed_names = joblib.load('breed_names.joblib')
 
