@@ -43,14 +43,14 @@ with st.form("my_form"):
 
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
-   if submitted:
-      if uploaded_file is not None:
-        img_array = load_and_preprocess_image(uploaded_file)
-        # Make prediction
-        prediction = model.predict(img_array)
-        predicted_class = np.argmax(prediction)
-        predicted_breed = breed_names[predicted_class]
-        st.write(f"Predicted breed: {predicted_breed}")
-        st.image(uploaded_file)
-      else:
-        st.write("Please upload an image.")
+   # if submitted:
+   #    if uploaded_file is not None:
+   #      img_array = load_and_preprocess_image(uploaded_file)
+   #      # Make prediction
+   #      prediction = model.predict(img_array)
+   #      predicted_class = np.argmax(prediction)
+   #      predicted_breed = breed_names[predicted_class]
+   #      st.write(f"Predicted breed: {predicted_breed}")
+   #      st.image(uploaded_file)
+   #    else:
+   #      st.write("Please upload an image.")
