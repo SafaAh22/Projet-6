@@ -4,7 +4,6 @@ import joblib
 import pandas as pd
 import sklearn
 import tensorflow
-import tensorflow_hub as hub
 from tensorflow.keras.models import load_model
 import numpy as np
 from tensorflow.keras.preprocessing import image
